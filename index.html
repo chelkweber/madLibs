@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Mad Libs</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+	<body ng-app="madLibApp">
+		<div>
+			<h1>Mad Libs</h1>
+			<a href="#!/entry">Entry Page</a>
+			<a href="#!/story">Story Page</a>
+		</div>
+		<div ng-view="">
+			loading...
+		</div>
+		
+		
+<!-- Include angular and angular-route -->
+		<script src="lib/angular.min.js"></script>
+		<script src="lib/angular-route.min.js"></script>
+		<script src="app.js"></script>
+		<script src="controllers/entryCtrl.js"></script>
+		<script src="controllers/storyCtrl.js"></script>
+		<script src="madLibService.js"></script>
+	</body>
+</html>
