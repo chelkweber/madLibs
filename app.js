@@ -16,7 +16,8 @@
 		});
 		//otherwise
 		$routeProvider.otherwise({
-			template: "Play!"
+			templateUrl: 'views/entry.html',
+			controller: 'entryCtrl'
 		});
 	})
 })();
